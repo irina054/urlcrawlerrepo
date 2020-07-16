@@ -15,16 +15,7 @@ import com.irina.urlcrawlerapp.urlcrawler.RequestCrawlerResults;
 public class CrawlerService {
 
 	public static final int LAST_LEVEL_NO_PARSING = 1;
-	/*
-	 * 2. create result structure : RESULT 
-	 * 			1. HashSet or HashMap with key : URL; its thread safe to collect Results. will be updated by all Tasks
-	 * 			2. Data of result is : 
-	 * 					2.1 httpStatus
-	 * 					2.2 a list of all URLs in that page. 
-	 * 		2.1 each entry will have data of level 
-	 * 3. create task RUNNABLE with reference to RESULT to check root level URL and send it to queue.
-	 * 4. create and run task CALLABLE with reference to RESULT to collect results with root URL to start result collection.
-	 */
+
 	public List<UrlResultStatus> crawleUrl(String url, int depth) throws ValidationError {
 		//check URL format in general, throw exception otherwise
 		//URLChecker.validateURLpattern(url +  DEFAULT_URL_SUFFIX);		

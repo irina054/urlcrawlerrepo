@@ -25,7 +25,7 @@ public class CollectCrawlerResults {
 		boolean isFoundAllResults = false;
 		Queue<String> expectedResults = new LinkedList<>();
 		expectedResults.add(url);
-	//	int currentDepth = 1;
+	
 		while (!isFoundAllResults) {
 			try {
 				String notification = results.getFinishNotifications().take();
@@ -36,11 +36,6 @@ public class CollectCrawlerResults {
 					
 					UrlResultStatus urlResultStatus = results.getResults().get(currentUrl);
 					
-					//start handling next level
-//					if (currentDepth < urlResultStatus.getDepthLevel()) {
-//						++currentDepth;
-//					}
-
 					if ((urlResultStatus != null) && (urlResultStatus.isAvailabilityTestDone())) {
 						if (!urlResultStatus.isParsingRequired()) {
 							expectedResults.poll();							
