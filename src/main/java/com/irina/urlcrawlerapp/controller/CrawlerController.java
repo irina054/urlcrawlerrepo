@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.irina.urlcrawlerapp.dto.CrawlerResultStatus;
+import com.irina.urlcrawlerapp.dto.UrlResultStatus;
 import com.irina.urlcrawlerapp.exception.ValidationError;
 import com.irina.urlcrawlerapp.service.CrawlerService;
 
 @RestController
-public class IriSpringAppController {
+public class CrawlerController {
 
 	@Autowired
 	CrawlerService  service;
@@ -23,7 +23,7 @@ public class IriSpringAppController {
 	}
 	
 	@RequestMapping(value = {"/crawle",  "/crawle/"})
-	public List<CrawlerResultStatus> crawleUrl(@RequestParam String url, @RequestParam int depth) throws ValidationError {
+	public List<UrlResultStatus> crawleUrl(@RequestParam String url, @RequestParam int depth) throws ValidationError {
 
 		return service.crawleUrl(url, depth);
 	}

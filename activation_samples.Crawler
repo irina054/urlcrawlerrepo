@@ -1,0 +1,108 @@
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$ curl 'desktop-iri:8080//crawle?url=http://www.google.com/&depth=2'
+[{"url":"http://maps.google.co.il/maps?hl=iw&tab=wl","httpRequestStatusCode":302,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingReq
+uired":false},{"url":"http://www.google.co.il/intl/iw/services/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true
+,"parsingRequired":false},{"url":"http://www.google.co.il/imghp?hl=iw&tab=wi","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityT
+estDone":true,"parsingRequired":false},{"url":"http://www.google.co.il/history/optout?hl=iw","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false
+,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.youtube.com/?gl=IL&tab=w1","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone
+":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://news.google.co.il/nwshp?hl=iw&tab=wn","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[
+],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefs?sig=0_xTzC_jPFyzxKR73O2kwXCzQBa3M%3D&amp;hl=ar&amp;sou
+rce=homepage&amp;sa=X&amp;ved=0ahUKEwinp67g6tLqAhXQ_CoKHVURAMQQ2ZgBCAU","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDon
+e":true,"parsingRequired":false},{"url":"https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=http://www.google.com/","httpRequestStatusCode":200,"depth
+Level":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefs?sig=0_xTzC_jPFyzxKR73O2kwXCzQBa3M%
+3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwinp67g6tLqAhXQ_CoKHVURAMQQ2ZgBCAY","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,
+"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.co.il/&amp;sig=K_b6Q0uJ8S4hIpFwsB
+zW4aS28F1do%3D","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.goog
+le.com/","httpRequestStatusCode":200,"depthLevel":2,"refUrls":["http://maps.google.co.il/maps?hl=iw&tab=wl","http://www.google.co.il/intl/iw/services/","http://www.goog
+le.co.il/imghp?hl=iw&tab=wi","http://www.google.co.il/history/optout?hl=iw","http://www.youtube.com/?gl=IL&tab=w1","http://news.google.co.il/nwshp?hl=iw&tab=wn","http:/
+/www.google.com/setprefs?sig=0_xTzC_jPFyzxKR73O2kwXCzQBa3M%3D&amp;hl=ar&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwinp67g6tLqAhXQ_CoKHVURAMQQ2ZgBCAU","https://accounts
+.google.com/ServiceLogin?hl=iw&passive=true&continue=http://www.google.com/","http://www.google.com/setprefs?sig=0_xTzC_jPFyzxKR73O2kwXCzQBa3M%3D&amp;hl=en&amp;source=h
+omepage&amp;sa=X&amp;ved=0ahUKEwinp67g6tLqAhXQ_CoKHVURAMQQ2ZgBCAY","http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.co.il/&amp;sig=K_b6Q0uJ8S4
+hIpFwsBzW4aS28F1do%3D"],"parsingDone":true,"availabilityTestDone":true,"parsingRequired":true}]
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$
+
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$ curl 'desktop-iri:8080//crawle?url=http://www.google.com/&depth=3'
+[{"url":"http://www.google.com/setprefs?sig=0_Ls2lZa4PARIeNHrKikeShKDkd8c%3D&amp;hl=ar&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjrnZa569LqAhXCpIsKHQ_AB8UQ2ZgBCAU","h
+ttpRequestStatusCode":301,"depthLevel":2,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://maps.google.co.il/maps?hl=
+iw&tab=il","httpRequestStatusCode":302,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.co
+.il/imghp?hl=iw&tab=wi","httpRequestStatusCode":200,"depthLevel":2,"refUrls":["http://maps.google.co.il/maps?hl=iw&tab=il","http://www.youtube.com/?gl=IL&tab=i1","http:
+//news.google.co.il/nwshp?hl=iw&tab=in","https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=http://www.google.co.il/imghp%3Fhl%3Diw%26tab%3Dwi"],"pars
+ingDone":true,"availabilityTestDone":true,"parsingRequired":true},{"url":"http://www.youtube.com/?gl=IL&tab=w1","httpRequestStatusCode":301,"depthLevel":2,"refUrls":[],
+"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://news.google.co.il/nwshp?hl=iw&tab=wn","httpRequestStatusCode":301,"depthLevel":2
+,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"https://accounts.google.com/ServiceLogin?hl=iw&passive=true&continue=http
+://www.google.com/","httpRequestStatusCode":200,"depthLevel":2,"refUrls":["http://www.google.com/support/accounts?hl=iw"],"parsingDone":true,"availabilityTestDone":true
+,"parsingRequired":true},{"url":"http://news.google.co.il/nwshp?hl=iw&tab=in","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityT
+estDone":true,"parsingRequired":false},{"url":"http://www.google.com/support/accounts?hl=iw","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false
+,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://maps.google.co.il/maps?hl=iw&tab=wl","httpRequestStatusCode":302,"depthLevel":2,"refUrls":[],"parsi
+ngDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefs?sig=0_Ls2lZa4PARIeNHrKikeShKDkd8c%3D&amp;hl=en&amp;source=home
+page&amp;sa=X&amp;ved=0ahUKEwjrnZa569LqAhXCpIsKHQ_AB8UQ2ZgBCAY","httpRequestStatusCode":301,"depthLevel":2,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,
+"parsingRequired":false},{"url":"http://www.google.co.il/intl/iw/services/","httpRequestStatusCode":301,"depthLevel":2,"refUrls":[],"parsingDone":false,"availabilityTes
+tDone":true,"parsingRequired":false},{"url":"http://www.google.co.il/history/optout?hl=iw","httpRequestStatusCode":301,"depthLevel":2,"refUrls":[],"parsingDone":false,"
+availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.co.il/&amp;sig=K_bxx9XcLRT6Dod2Z2-
+TxUdQfWwvo%3D","httpRequestStatusCode":200,"depthLevel":2,"refUrls":["http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.co.il/&amp;sig=K_g-_n1BF
+xqUmA6zxRdEREYsUVS9s%3D","http://www.google.com/setprefs?sig=0_eTf0AgHVWy2AO2NDQpctf_rK--I%3D&amp;hl=ar&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjT_-q569LqAhXKlYsKHQ
+Q0D8oQ2ZgBCAU","http://www.google.com/setprefs?sig=0_eTf0AgHVWy2AO2NDQpctf_rK--I%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjT_-q569LqAhXKlYsKHQQ0D8oQ2ZgB
+CAY"],"parsingDone":true,"availabilityTestDone":true,"parsingRequired":true},{"url":"http://www.youtube.com/?gl=IL&tab=i1","httpRequestStatusCode":301,"depthLevel":1,"r
+efUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.co
+.il/&amp;sig=K_g-_n1BFxqUmA6zxRdEREYsUVS9s%3D","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired"
+:false},{"url":"http://www.google.com/setprefs?sig=0_eTf0AgHVWy2AO2NDQpctf_rK--I%3D&amp;hl=ar&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjT_-q569LqAhXKlYsKHQQ0D8oQ2ZgB
+CAU","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"https://accounts.google.co
+m/ServiceLogin?hl=iw&passive=true&continue=http://www.google.co.il/imghp%3Fhl%3Diw%26tab%3Dwi","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":fal
+se,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.google.com/setprefs?sig=0_eTf0AgHVWy2AO2NDQpctf_rK--I%3D&amp;hl=en&amp;source=homepage&amp;sa
+=X&amp;ved=0ahUKEwjT_-q569LqAhXKlYsKHQQ0D8oQ2ZgBCAY","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingReq
+uired":false},{"url":"http://www.google.com/","httpRequestStatusCode":200,"depthLevel":3,"refUrls":["http://www.google.com/setprefs?sig=0_Ls2lZa4PARIeNHrKikeShKDkd8c%3D
+&amp;hl=ar&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjrnZa569LqAhXCpIsKHQ_AB8UQ2ZgBCAU","http://maps.google.co.il/maps?hl=iw&tab=wl","http://www.google.com/setprefs?s
+ig=0_Ls2lZa4PARIeNHrKikeShKDkd8c%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjrnZa569LqAhXCpIsKHQ_AB8UQ2ZgBCAY","http://www.google.co.il/intl/iw/services/"
+,"http://www.google.co.il/imghp?hl=iw&tab=wi","http://www.google.co.il/history/optout?hl=iw","http://www.google.com/setprefdomain?prefdom=IL&amp;prev=http://www.google.
+co.il/&amp;sig=K_bxx9XcLRT6Dod2Z2-TxUdQfWwvo%3D","http://www.youtube.com/?gl=IL&tab=w1","http://news.google.co.il/nwshp?hl=iw&tab=wn","https://accounts.google.com/Servi
+ceLogin?hl=iw&passive=true&continue=http://www.google.com/"],"parsingDone":true,"availabilityTestDone":true,"parsingRequired":true}]
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
+
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$ curl 'desktop-iri:8080//crawle?url=http://h2020.myspecies.info/&depth=2'
+[{"url":"http://openid.net/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"ht
+tp://vbrant.eu/","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.ben
+scott.co.uk/","httpRequestStatusCode":403,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://scratchpad
+s.eu/","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://scratchpads.eu/ab
+out/policies","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://drupal.org
+/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://vsmith.info/","httpRe
+questStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://simon.rycroft.name","httpReques
+tStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://h2020.myspecies.info/","httpRequest
+StatusCode":200,"depthLevel":2,"refUrls":["http://openid.net/","http://vbrant.eu/","http://www.benscott.co.uk/","http://scratchpads.eu/","http://scratchpads.eu/about/po
+licies","http://drupal.org/","http://vsmith.info/","http://simon.rycroft.name"],"parsingDone":true,"availabilityTestDone":true,"parsingRequired":true}]
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$
+
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$
+
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$ curl 'desktop-iri:8080//crawle?url=http://h2020.myspecies.info/&depth=2'
+[{"url":"http://openid.net/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"ht
+tp://vbrant.eu/","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://www.ben
+scott.co.uk/","httpRequestStatusCode":403,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://scratchpad
+s.eu/","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://scratchpads.eu/ab
+out/policies","httpRequestStatusCode":200,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://drupal.org
+/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://vsmith.info/","httpRe
+questStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://simon.rycroft.name","httpReques
+tStatusCode":301,"depthLevel":1,"refUrls":[],"parsingDone":false,"availabilityTestDone":true,"parsingRequired":false},{"url":"http://h2020.myspecies.info/","httpRequest
+StatusCode":200,"depthLevel":2,"refUrls":["http://openid.net/","http://vbrant.eu/","http://www.benscott.co.uk/","http://scratchpads.eu/","http://scratchpads.eu/about/po
+licies","http://drupal.org/","http://vsmith.info/","http://simon.rycroft.name"],"parsingDone":true,"availabilityTestDone":true,"parsingRequired":true}]
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$
+

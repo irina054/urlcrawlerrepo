@@ -1,10 +1,14 @@
 package com.irina.urlcrawlerapp.urlcrawler;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 
-import com.irina.urlcrawlerapp.dto.CrawlerResultStatus;
+import com.irina.urlcrawlerapp.dto.UrlResultStatus;
 
 public interface URLCheckerExecutor {
 
-	List<CrawlerResultStatus> runChecker(List<String> urlsToScan) ;
+	ExecutorService getExecutor() ;
+	void setExecutor(ExecutorService executor);
+
+	List<UrlResultStatus> runChecker(List<String> urlsToScan) ;
 }

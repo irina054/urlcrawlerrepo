@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import com.irina.urlcrawlerapp.dto.CrawlerResultStatus;
+import com.irina.urlcrawlerapp.dto.UrlResultStatus;
 import com.irina.urlcrawlerapp.exception.InputValidationError;
 
-public class URLChecker implements Callable<List<CrawlerResultStatus>> {
+public class URLChecker implements Callable<List<UrlResultStatus>> {
 	
 	private List<String> urls = new ArrayList<String>();
 
@@ -23,15 +23,15 @@ public class URLChecker implements Callable<List<CrawlerResultStatus>> {
 	}
 
 	@Override
-	public List<CrawlerResultStatus> call() throws Exception {
-		List<CrawlerResultStatus> result = new ArrayList<>();
+	public List<UrlResultStatus> call() throws Exception {
+		List<UrlResultStatus> result = new ArrayList<>();
 		for (String urlInput:urls) {
 				//malformed URL string will cause to runtime exception
 				//TODO Currently URL is tested at endPOINT of rest API ... consider refactor if required .. no need to duplicate ...
 		    	 URL url = validateURLpattern(urlInput);
 
 		    	 URLcheckerByProtocol urlChecker = URLcheckerByProtocolFactory.getUrlChecker(url);
-			     result.add(new CrawlerResultStatus(urlInput, urlChecker.check()));			     		    
+			     result.add(new UrlResultStatus(urlInput, urlChecker.check(), 17));			     		    
 		}
 		return result;
 	}
