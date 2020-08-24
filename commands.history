@@ -1,0 +1,71 @@
+curl 'desktop-iri:8080//crawle?url=http://h2020.myspecies.info/&depth=2'
+
+[{"url":"http://openid.net/","httpRequestStatusCode":301,"depthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},{"url":"http://vbrant.eu/","http
+RequestStatusCode":200,"depthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},{"url":"http://www.benscott.co.uk/","httpRequestStatusCode":400,"d
+epthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},{"url":"http://scratchpads.eu/","httpRequestStatusCode":200,"depthLevel":1,"refUrls":null,"
+availabilityTestDone":true,"parsingDone":false},{"url":"http://scratchpads.eu/about/policies","httpRequestStatusCode":200,"depthLevel":1,"refUrls":null,"availabilityTes
+tDone":true,"parsingDone":false},{"url":"http://drupal.org/","httpRequestStatusCode":400,"depthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},
+{"url":"http://vsmith.info/","httpRequestStatusCode":400,"depthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},{"url":"http://simon.rycroft.nam
+e","httpRequestStatusCode":400,"depthLevel":1,"refUrls":null,"availabilityTestDone":true,"parsingDone":false},{"url":"http://h2020.myspecies.info/","httpRequestStatusCo
+de":200,"depthLevel":2,"refUrls":["http://openid.net/","http://vbrant.eu/","http://www.benscott.co.uk/","http://scratchpads.eu/","http://scratchpads.eu/about/policies",
+"http://drupal.org/","http://vsmith.info/","http://simon.rycroft.name"],"availabilityTestDone":true,"parsingDone":true}]
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+
+
+188  curl 'desktop-iri:8080//crawle?url=http://h2020.myspecies.info/&depth=2'
+  189  curl 'desktop-iri:8080//crawle?url=http://h2020.myspecies.info/&depth=2'
+  
+  
+   137  git commit -ma "first commit"
+  138  git commit -am"first commit"
+  139  git remote add origin https://github.com/irina054/urlcrawlerrepo.git
+  140  git push -u origin master
+  141  cd ../
+  142  mkdit test_irina054_git_repo_for_ebay
+  143  mkdir  test_irina054_git_repo_for_ebay
+  144  cd  test_irina054_git_repo_for_ebay
+  145  git clone https://github.com/irina054/urlcrawlerrepo.git
+  146  ls -lrt
+  147  cd urlcrawlerrepo/
+  148  ls -lrt
+  149  history
+  150  mvn spring-boot:run
+  151  history
+  152  ls -lrt
+  153  cd ../../urlcrawler/
+  154  git status
+  155  git tag "ebay-1st-release"
+  156  git log  | more
+  157  git push -u origin master
+  158  git push tag
+  159  git push --tags
+  160  ls -lrt
+  161  mvn spring-boot:run
+  162  mvn spring-boot:run
+  163  mvn spring-boot:run
+  164  mvn spring-boot:run
+  165  mvn clean
+  166  mvn spring-boot:run
+  167  mvn spring-boot:run
+  168  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  169  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  170  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  171  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  172  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  173  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  174  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  175  mvn spring-boot:run
+  176  mvn spring-boot:run
+  177  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  178  mvn spring-boot:run
+  179  mvn spring-boot:run
+  180  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  181  mvn spring-boot:run -Dspring-boot.run.jvmArguments="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7777"
+  182  history -s
+  183  history -a
+  184  history
+
+itransky@DESKTOP-iri /cygdrive/c/Irina/IriJavaProjectsPractice/urlcrawler
+$
+
+
